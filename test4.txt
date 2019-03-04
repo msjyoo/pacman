@@ -1,0 +1,7 @@
+(venv) msjyoo@seldon:~/Documents/Projects/pacman> exit^C
+(venv) msjyoo@seldon:~/Documents/Projects/pacman> python3 pacman.py
+(1, 4, 7)
+(74, 50, 136)
+(-1, -1, 0)
+(0, 0, 15)
+(venv) msjyoo@seldon:~/Documents/Projects/pacman>

@@ -1,4 +1,5 @@
 from typing import *
+import unittest
 
 author = "Michael Yoo <michael@yoo.id.au>"
 
@@ -46,7 +47,6 @@ def pacman_args(board_dimension: (int, int),
 
     Assumptions made:
     - PACMAN cannot move beyond the boundaries of the board, otherwise it is an error
-    -
 
     :param board_dimension: Dimensions of the board - e.g. (5, 5) for a 5x5 board
     :param initial_position: Initial position of PACMAN e.g. (0, 0) for bottom left
@@ -98,16 +98,3 @@ def pacman_args(board_dimension: (int, int),
                 coins_collected += 1
 
     return current_pos[0], current_pos[1], coins_collected
-
-
-# Could use a testing framework here like hypothesis, but in the interest of time...
-if __name__ == "__main__":
-    assert pacman("test0.txt") == (1, 4, 7)
-    assert pacman("test1.txt") != (-1, -1, 0)
-    assert pacman("test2.txt") == (-1, -1, 0)
-    assert pacman("test3.txt") == (0, 0, 15)
-    assert pacman("test4.txt") == (-1, -1, 0)
-    assert pacman("test5.txt") == (-1, -1, 0)
-    assert pacman("test6.txt") == (9, 0, 9)
-    assert pacman("test7.txt") == (3, 1, 6)
-    assert pacman("test8.txt") == (1, 4, 7)

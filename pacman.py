@@ -110,3 +110,4 @@ if __name__ == "__main__":
     assert pacman("test5.txt") == (-1, -1, 0)
     assert pacman("test6.txt") == (9, 0, 9)
     assert pacman("test7.txt") == (3, 1, 6)
+    assert pacman("test8.txt") == (1, 4, 7)
